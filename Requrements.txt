@@ -1,0 +1,481 @@
+# ✅ FULL PROJECT REQUIREMENTS (Organized Section-Wise)
+
+---
+
+# 1️⃣ NAVBAR REQUIREMENTS
+
+### **General Rules**
+
+- Must use a **`<nav>`** element (✖ do NOT use `<div>` for entire navbar).
+    
+- The `nav` element **must have class name: `navbar`**.
+    
+- Navbar **background color must be exactly**:  
+    `rgb(0, 0, 51)`  
+    (dark navy blue).
+    
+
+---
+
+### **Logo**
+
+- Use the given image link for the logo:
+    
+    ```css
+    https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/xCruise-logo.png
+    ```
+    
+- Place it inside a container (commonly a `<div>` with class `logo` is ok).
+    
+
+---
+
+### **Menu Links**
+
+- You MUST include **three links**:
+    
+    - **Home**
+        
+    - **Destinations**
+        
+    - **Deals**
+        
+- All links must be wrapped inside **one `<div>` with class: `menu`**
+    
+- Each item must be an `<a>` tag.
+    
+
+Example structure summary:
+
+```
+<nav class="navbar">
+  <div class="logo">
+    <img ... >
+  </div>
+
+  <div class="menu">
+    <a>Home</a>
+    <a>Destinations</a>
+    <a>Deals</a>
+  </div>
+</nav>
+```
+
+---
+
+# 2️⃣ HERO SECTION REQUIREMENTS
+
+### **HTML Structure**
+
+- Hero must be inside a **section with class `hero`**.
+    
+- Inside it must contain:
+    
+    - A **heading (`h1`)** with EXACT text:  
+        **“DISCOVER THE BEAUTY OF CRUISING WITH US”**
+        
+    - A **button** with EXACT text:  
+        **“Book Now”**
+        
+    - Optionally, a subtitle (if required by your design) such as  
+        **"For greater beauty"**, but this was not originally required by the test.
+        
+
+---
+
+### **Hero Background**
+
+You MUST use the hero image as **CSS background-image**, NOT `<img>` tag.
+
+Image link:
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png
+```
+
+CSS required:
+
+```
+.hero {
+    background-image: url("HERO_IMAGE_LINK");
+}
+```
+
+---
+
+### **Responsiveness Breakpoints**
+
+- **Desktop:** 768px and above
+    
+- **Tablets:** 480px to 768px
+    
+- **Mobile:** below 480px
+    
+
+(No specific layout required but must be responsive.)
+
+---
+
+# 3️⃣ DISCOVER SECTION REQUIREMENTS
+
+This is the **largest section** and contains 3 parts:
+
+---
+
+# 🔸 A) Discover Section Wrapper
+
+- Entire section must have **class: `discover`**
+    
+
+---
+
+# 🔸 B) Discover Section Header
+
+Inside the discover section, you must create a div with:
+
+- **class: `heading`**
+    
+- Contains:
+    
+    1. A heading:
+        - **h2 tag**
+        - exact text: **“DISCOVER OUR DESTINATIONS”**
+            
+    2. A paragraph (short description – can be any text, not test-checked)
+        
+    3. A **popular section** structured as follows:
+        
+
+```
+<div class="popular">
+    <h4>Popular :</h4>
+
+    <div class="pills">
+        <div class="pill">
+            <img ... >
+            <span>Weekend Cruises</span>
+        </div>
+
+        <div class="pill">...</div>
+        <div class="pill">...</div>
+    </div>
+</div>
+```
+
+---
+
+### **Pill Section Requirements**
+
+- Pills container must have class: **`pills`**
+    
+- Each pill must be a `<div>` containing:
+    
+    - an image (fixed size recommended ~24px)
+        
+    - a `<span>` for text
+        
+- Each pill MUST have this EXACT box-shadow:
+    
+
+```
+box-shadow: rgba(60,64,67,0.3) 0px 1px 2px 0px,
+            rgba(60,64,67,0.15) 0px 1px 3px 1px;
+```
+
+---
+
+### **Pill Image Links**
+
+1️⃣ Weekend Cruises
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/weekend-cruises-pill.png
+```
+
+2️⃣ Summer Cruises
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/summer-cruises-pill.png
+```
+
+3️⃣ Exotic Cruises
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/exotic-cruises-pill.png
+```
+
+---
+
+# 🔸 C) Discover Banner
+
+Banner MUST:
+
+- Be placed **below the heading**
+    
+- Take full width on all screen sizes
+    
+- Use the following image:
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/caribbean-cruise.png
+```
+
+---
+
+### **Banner Text Requirement**
+
+You MUST overlay:
+
+- **“CARIBBEAN & THE BAHAMAS”**
+    
+- **“Crystal clear water and tropical vibes”**
+    
+
+These should be placed over the image (absolute positioning).
+
+---
+
+# 🔸 D) Discover Grid Cards
+
+### **Rules**
+
+- Each card MUST have class: **`card`**
+    
+- You must place the SAVE icon in the top-right corner (optional per question but include it if possible)
+    
+- On hover or default, cursor MUST be:  
+    `cursor: pointer;`
+    
+- The grid layout MUST follow:
+    
+
+|Screen Size|Cards per row|
+|---|---|
+|Desktop ≥768px|**4 cards**|
+|Tablet 480–768|**2 cards**|
+|Mobile <480px|**1 card**|
+
+---
+
+### **Images for the 8 Cards**
+
+1. Caribbean (banner already used above)
+    
+2. Mediterranean
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/mediterranean-cruise.png
+```
+
+3. Dubai & Abu Dhabi
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/dubai-cruise.png
+```
+
+4. Northern Europe
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/northern-europe-cruise.png
+```
+
+5. Red Sea
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/redsea-cruise.png
+```
+
+6. Bermuda
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/bermuda-beach-cruise.png
+```
+
+7. South Africa
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-africa-cruise.png
+```
+
+8. South America
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/south-america-cruise.png
+```
+
+9. Asia
+    
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/asia-cruise.png
+```
+
+---
+
+### **Save/Bookmark Icon**
+
+(Optional per spec, but recommended)
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/save-icon.png
+```
+
+---
+
+# 4️⃣ CONTACT SECTION REQUIREMENTS
+
+- Must use **`id="contact"`**
+    
+- Must have an **h3** heading with EXACT text:  
+    **"Contact Us"**
+    
+- MUST contain **one wrapper div**:
+    
+    ```
+    <div class="contact_info"></div>
+    ```
+    
+- Inside it, there must be **two divs**, each structured as:
+    
+
+---
+
+### Contact Information (first div)
+
+```HTML
+<h4>Contact Information</h4>
+<p>6750 N. Andrews Avenue Suite 100 Fort Lauderdale, FL 33309</p>
+<p>Call Us: +62-813 346 100</p>
+```
+
+---
+
+### Hours of Operation (second div)
+
+```
+<h4>Hours of Operation</h4>
+<p>Mon-Fri: 8:00 am - 11:00 pm EST</p>
+<p>Sat-Sun: 9:00 am - 9:00 pm EST</p>
+```
+
+These texts MUST match exactly.
+
+---
+
+# 5️⃣ FOOTER REQUIREMENTS
+
+There are 2 parts:
+
+---
+
+### A) Social Icons (strict rule)
+
+- All **4 social icons ONLY** must be inside a div with class:
+    
+
+```
+.social-icons
+```
+
+- The 4 icons (no extra text inside this div):
+    
+
+Instagram
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/instagram-icon.png
+```
+
+Facebook
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/facebook-icon.png
+```
+
+YouTube
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/youtube-icon.png
+```
+
+Gmail
+
+```
+https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/gmail-icon.png
+```
+
+---
+
+### B) Copyright
+
+- Must be inside a div with class:
+    
+
+```
+.footer_rights
+```
+
+- MUST contain EXACT text:
+    
+
+```
+© 2024 xCruise In. All rights reserved
+```
+
+---
+
+# 6️⃣ RESPONSIVE BREAKPOINTS YOU MUST USE
+
+```
+Desktop: 768px and above
+Tablet: 480px to 768px
+Mobile: less than 480px
+```
+
+Key required outcomes:
+
+- Banner always full width.
+    
+- Cards:
+    
+    ```
+    Mobile: 1 per row
+    Tablet: 2 per row
+    Desktop: 4 per row
+    ```
+    
+
+---
+
+# 7️⃣ GENERAL RULES TO AVIOD TEST CASE FAILURE
+
+### MUST DO
+
+✔ Use required class names exactly  
+✔ Use required IDs exactly  
+✔ Use required heading texts exactly  
+✔ Use background-image for hero  
+✔ Add box-shadow to pills  
+✔ Use `<nav>` element  
+✔ Use `<h1>`, `<h2>`, `<h3>`, `<h4>` where specified  
+✔ Keep `.social-icons` containing ONLY images  
+✔ Make cards have `cursor: pointer;`
+
+---
+
+### MUST NOT DO
+
+✖ Do NOT rename any required class  
+✖ Do NOT place extra elements inside `.social-icons`  
+✖ Do NOT change required text  
+✖ Do NOT use `<img>` for hero background  
+✖ Do NOT use wrong breakpoint values  
+✖ Do NOT modify provided image URLs
