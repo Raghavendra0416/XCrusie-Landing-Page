@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+
+/* Nav Styling */
+.navbar {
+    background-color: rgb(0, 0, 51);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.navbar {
+    height: 50px;
+}
+
+.logo img {
+    width: 45px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/hero-cruise.png);
+    background-size: cover;
+    height: 60vh;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #ff7a1a;
+    color: white;
+    padding: 10px;
+    border: 30px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Main Section */
+
+/* heading part */
+.heading {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+    border-left: 5px solid #ff7a1a;
+}
+
+.heading p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Popular Part */
+.popular {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Pills Part */
+.pills {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Pill Part */
+.pill {
+    padding: 6px 12px;
+    border-radius: 999px;
+    background-color: #ffffff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    display: flex;
+    align-items: center;
+}
+
+.pill img {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+}
+
+
+
+/* Banner Part */
+.banner {
+    background-image: url(https://raw.githubusercontent.com/Mohak-Trivedi/xcruise-assets/refs/heads/master/caribbean-cruise.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+
+    height: 60vh;
+    margin: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bookmark {
+    align-self: flex-end;
+}
+
+.bookmark img {
+    padding: 8px;
+    background-color: rgb(113, 108, 108);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.banner h3 {
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+/* Cards Part */
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    padding-top: 0;
+}
+
+.card {
+    height: 175px;
+    width: 100%;
+
+    cursor: pointer;
+    position: relative;
+}
+
+.save {
+    padding: 8px;
+    background-color: rgb(113, 108, 108);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-text {
+    color: #ffffff;
+
+    position: relative;
+    bottom: 40px;
+    left: 5px;
+}
+
+
+/* Contacts Section */
+#contact {
+    text-align: center;
+    padding-bottom: 50px;
+
+    position: relative;
+
+}
+
+#contact h3 {
+    width: 120px;
+    text-align: center;
+    border-bottom: 3px solid orange;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+
+.contact_info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+    justify-content: center;
+}
+
+.info {
+    border: 1px solid lightgray;
+    padding: 30px 20px;
+    width: 400px;
+    text-align: center;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: rgb(0, 0, 51);
+    color: #ffffff;
+    padding: 40px;
+}
+
+.footer-details {
+    padding: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.details p {
+    padding: 3px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-icons img {
+    width: 20px;
+    border-radius: 50%;
+}
+
+.icons {
+    display: flex;
+    justify-content: left;
+}
+
+/* footer_rights */
+.footer_rights {
+    text-align: center;
+}
+
+/* Responsive Section */
+
+@media(min-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact_info {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .info {
+        width: 45%;
+    }
+
+    .footer-top {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
